@@ -9,5 +9,5 @@ package datos;
  * @author Asus
  */
 public class Opcionidentificacion {
-   
+   int a=0;
 }
