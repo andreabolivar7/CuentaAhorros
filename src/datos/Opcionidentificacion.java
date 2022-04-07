@@ -8,6 +8,6 @@ package datos;
  *
  * @author Asus
  */
-public class Opcionidentificacion {
-  
+public enum Opcionidentificacion {
+  CEDULA, TARJETA_IDENTIDAD, OTRO;
 }

@@ -11,26 +11,37 @@ package datos;
 public class Cliente {
     private String nombre;
     private String tidentificacion;
-    private int valorinicial;
+    private String valorInicial;
     
-    public Cliente(String nombre, String tidentificacion, int valorinicial){
-        this.nombre = nombre;
-        this.tidentificacion = tidentificacion;
-        this.valorinicial= valorinicial;
-    }
-    public Cliente(String tidentificacion){
-       
-        this.tidentificacion = tidentificacion;
-        
-    }
-    
-    public String obtenerNombre(){
+   public String obtenerNombre(){
         return this.nombre;
     }
-    public String obtenerTidentificacion(){
+    
+     public String obtenerTidenti(){
         return this.tidentificacion;
     }
-    public int obtenerValorinicial(){
-        return this.valorinicial;
+    
+    public String obtenerValori(){
+        return this.valorInicial;
+    }
+    
+    public void modificarNombre(String nombre){
+        this.nombre=nombre;
+    }
+    
+    public void modificarTidenti(String identi){
+        this.tidentificacion=tidentificacion;
+    }
+    
+    public void modificarValori(String valorInicial){
+        this.valorInicial=valorInicial;
+    }
+    @Override
+    public String toString(){
+        return "Nombre: "+this.nombre+" Tipo de identificacion: "+this.tidentificacion+" Valor inicial: "+this.valorInicial;
+    }
+
+    String obtenerCliente() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
