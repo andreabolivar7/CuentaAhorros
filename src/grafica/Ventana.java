@@ -208,6 +208,11 @@ public class Ventana extends javax.swing.JFrame {
             public void run() {
                 new Ventana().setVisible(true);
             }
+            public String obtenerFechaCreacion()
+    {
+        String timeStamp = new SimpleDateFormat("yyyy / MM / dd - HH:mm:ss").format(Calendar.getInstance().getTime());
+        return timeStamp;
+    }
         });
        
     }
